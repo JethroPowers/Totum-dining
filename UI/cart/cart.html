@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cart</title>
+<link href="cart.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+  $('#nav-placeholder').load("nav.html");
+
+});
+</script>
+
+</head>
+
+<body>
+	<div id="nav-placeholder">
+
+		</div> 
+<main class="main">
+  
+  <div class="main-container">
+	<div class="orders">
+	  <div class="order"><img src="../images/mixed-kabab.jpg" width="260" height="137" alt=""/>
+				<div class="name-date-price">
+				  <div class="order-name">chicken sandwich with juice</div>
+				  <div class="order-price">Shs15000</div>
+				  <div class="order-date">14/07/2021</div>
+			  </div>
+                <div class="qty-remove-edit">
+                  <div class="qty-label">Qty</div>
+                  <select class="quantity-numbers">
+                    <optgroup>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </optgroup>
+                    </select>
+                 
+                  <div class="edit-remove">
+					<img src="../images/icons/edit.svg" height="30px" alt=""/>
+                    <img src="../images/icons/remove.svg" height="30px" alt=""/>
+					</div>
+                  </div>
+                </div>
+		     
+	  <div class="order"><img src="../images/mixed-kabab.jpg" width="260" height="137" alt=""/>
+				<div class="name-date-price">
+				  <div class="order-name">chicken sandwich with juice</div>
+				  <div class="order-price">Shs15000</div>
+				  <div class="order-date">14/07/2021</div>
+			  </div>
+                <div class="qty-remove-edit">
+                  <div class="qty-label">Qty</div>
+                  <select class="quantity-numbers">
+                    <optgroup>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </optgroup>
+                    </select>
+              
+                  <div class="edit-remove">
+					<img src="../images/icons/edit.svg" height="30px" alt=""/>
+                    <img src="../images/icons/remove.svg" height="30px" alt=""/>
+					</div>
+                </div>
+		     </div>
+			<div class="order"><img src="../images/mixed-kabab.jpg" width="260" height="137" alt=""/>
+				<div class="name-date-price">
+				  <div class="order-name">chicken sandwich with juice</div>
+				  <div class="order-price">Shs15000</div>
+				  <div class="order-date">14/07/2021</div>
+			  </div>
+                <div class="qty-remove-edit">
+                  <div class="qty-label">Qty</div>
+                  <select class="quantity-numbers">
+                    <optgroup>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </optgroup>
+                  </select>
+                  <div class="edit-remove">
+					<img src="../images/icons/edit.svg" height="30px" alt=""/>
+                    <img src="../images/icons/remove.svg" height="30px" alt=""/>
+					</div>
+                </div>
+      </div>
+			<div class="order"><img src="../images/mixed-kabab.jpg" width="260" height="137" alt=""/>
+				<div class="name-date-price">
+				  <div class="order-name">chicken sandwich with juice</div>
+				  <div class="order-price">Shs15000</div>
+				  <div class="order-date">14/07/2021</div>
+			  </div>
+                <div class="qty-remove-edit">
+                  <div class="qty-label">Qty</div>
+                  <select class="quantity-numbers">
+                    <optgroup>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </optgroup>
+                  </select>
+                  <div class="edit-remove">
+					<img src="../images/icons/edit.svg" height="30px" alt=""/>
+                    <img src="../images/icons/remove.svg" height="30px" alt=""/>
+					</div>
+                </div>
+      </div>
+    </div>
+    <div class="summary ">
+      <div class="summary-items ">
+  <div class="label">Date/time</div>
+        <input type="datetime-local" placeholder="DATE/TIME"/><br>
+        <div class="label">Party</div>
+        <select class="summary-quantity-numbers">
+          <optgroup>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </optgroup>
+          </select>
+		
+	    <div class="total">Total <span class="total-price">Shs60000</span></div>
+          <div class="buttons">
+            <button>Continue order</button>
+            <button>Checkout</button>
+          </div>
+      </div>
+    </div>
+	</div>	
+</main>
+</body>
+</html>

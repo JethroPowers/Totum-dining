@@ -1,0 +1,291 @@
+@charset "utf-8";
+main {
+	position: relative;
+	height: 50vh;
+	width: 80vw;
+	margin: auto;
+	
+
+	background: #FFFFFF;
+}
+
+.header{
+	padding-top: 10px;
+}
+
+ul {
+	list-style:none;
+	left: 70%;
+	position: fixed;
+	width: 100%;
+	top: 30px;
+	padding: 0;
+	margin: 0;
+	font-family: Rockwell;
+	font-style: normal;
+	font-weight: normal;
+	list-style-type: none;
+	font-size: 18px;
+
+ }
+
+a, a:visited, a:hover, a:active {
+  color: black;
+}
+ ul li {
+     position:relative;
+ }
+ ul, li {
+     margin:0;
+     padding:0;
+ }
+ li {
+	display:inline-block;
+	padding:10px 10px;
+	text-decoration: none;
+	float: left;
+ }
+li a{
+    text-decoration: none;
+	
+}
+ ul li ul {
+     display:none;
+     position:absolute;
+     top:45px;
+     left:0;
+	 width: 150px;
+ }
+ ul li ul li {
+     display:block;
+	 clear: both;
+     width: 100%;
+ }
+ ul li:hover {
+	background-color: #F1F0F0;
+	color: white;
+	text-shadow: none;
+	cursor: pointer;
+
+ }
+ ul li:hover ul {
+     display:block;
+ }
+
+.title{
+    font-family: Rockwell;
+    font-style: normal;
+    font-weight: normal;
+    margin-left: 18px;
+    color: #000000;
+
+}
+h2{
+	font-size: 35px;
+	font-family: Rockwell;
+	text-align: center;
+}
+
+.main-container{
+	display: grid;
+	grid-template-columns: 75% 25%;
+	grid-column-gap: 20px;
+	
+}
+.orders{
+	background-color: #e5e5e5;
+	
+}
+
+.summary{
+	background-color: #e5e5e5;
+	padding: 15px;
+	height: fit-content;
+}
+
+.order{
+	background-color: #F1F0F0;
+	margin: 20px;
+	display: flex;
+	padding: 10px;
+	box-shadow: 0px -5px 6px #888888;
+	box-radius: 5px;
+	border-radius: 10px;
+	
+}
+
+.qty-remove-edit {
+	align-self: self-end;
+	margin-top: 10px
+	
+	
+}
+.name-date-price{
+	flex-basis: 60%;
+	margin: 10px 0 0 10px;
+}
+ 
+.name-date-price img{
+	margin: 10px;
+	
+}
+.order-name, .qty-label{
+	font-family: Rockwell;
+	font-size: 24px;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+.order-date{
+	font-family: Rockwell;
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+
+.order-price{
+	font-family: Rockwell;
+	font-size: 20px;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+.edit-remove{
+	display: flex;
+	margin-top: 15px;
+	
+}
+.edit-remove img{
+	margin-right: 10px
+}
+
+.quantity-numbers{
+	width: 70px;
+	border: 2px solid black;
+	padding:4px;
+	border-radius: 10px;
+	font-family: Rockwell;
+	font-style: normal;
+	font-weight: normal;
+
+}
+optgroup, select{
+	font-size: 18px;
+}
+
+.label{
+	font-family: Rockwell;
+	font-size: 20px;
+	font-weight: 400;
+	
+}
+.summary input, .date-input, .order-date-label{
+	border: 2px solid black;
+	padding:10px;
+    margin-bottom: 20px;
+	border-radius: 10px;
+	font-family: Rockwell;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	background-color: white;
+}
+
+.date-input{
+	margin: 0;
+}
+
+
+
+.summary-quantity-numbers, .summary-quantity-numbers-label{
+	width: 70px;
+	border: 2px solid black;
+	padding:10px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	font-family: Rockwell;
+	font-style: normal;
+	font-weight: normal;
+	background: white;
+}
+.total{
+	font-family: Rockwell;
+	font-size: 20px;
+	font-weight: 400;
+	
+}
+
+.total-price{
+	margin-left: 15px;
+	font-size: 24px
+}
+button{
+	font-family: Rockwell;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 35px;
+    color: white;
+	background-color: black;
+	
+	
+}
+.buttons{
+	
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+
+.date-filter{
+	display: flex;
+	justify-content: flex-end;
+    
+}
+.search{
+	margin-left:20px;
+}
+.order img{
+	display: flex;
+	align-self: center
+}
+
+.mini-header{
+	margin-left: 20px;
+}
+
+
+.quantity-number-label{
+	width: 70px;
+	border: 2px solid black;
+	padding:4px;
+	border-radius: 10px;
+	font-family: Rockwell;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	background-color: white
+}
+.icons{
+	display: flex;
+	justify-content: space-around;
+	
+}
+
+.icons img{
+	margin-top: 20px; 
+}
+
+.cancel{
+	color: red;
+	font-family: Rockwell;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	align-self: flex-end;
+	text-align: right;
+	
+	flex-basis: 25%
+	
+}
+
+
+

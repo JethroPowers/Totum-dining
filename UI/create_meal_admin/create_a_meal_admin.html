@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Create_a_meal_admin</title>
+<link href="create_a_meal_admin.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+  $('#nav-placeholder').load("nav.html");
+
+});
+</script>
+
+</head>
+
+<body>
+	<div id="nav-placeholder">
+
+		</div> 
+<main class="main">
+  
+	<h2>Create a meal</h2>
+    <div class="main-div">
+      <div class="input-wrapper child-div" >
+        <input class="meal-inputs" type="text" placeholder="Name of meal"/><br>
+        <input class="meal-inputs" type="text" placeholder="Price of meal"/><br>
+        <select class="meal-inputs">
+          <option value="">Select the meal type</option>
+          <option value="special">Special</option>
+          <option value="regular">Regular</option>
+          </select>
+        <br>
+        <label for="img">Select image:</label>
+        <input class="meal-inputs" type="file" id="img" name="img" accept="image/*">
+        <br>
+        <input class="meal-inputs" type="date" placeholder="Serving date"/><br>
+        <br>
+        <label>Select food options:</label>
+        <br>
+        <select multiple class="meal-inputs">
+          <option value="greens">Greens</option>
+          <option value="rice">Rice</option>
+          <option value="beef">beef</option>
+          <option value="pineapple">Pinapple</option>
+        </select>
+        <br>
+        <button class="book-button">Review food options</button>
+        </div>
+      <div class="food-options child-div" >
+        <h3>Food Options</h3>
+		<div class="food-option-wrapper">
+			<div class="food-option">food item</div>
+			<div class="food-option">food item</div>
+			<div class="food-option">food item</div>
+			<div class="food-option">food item</div>
+			<div class="food-option">food item</div>
+			<div class="food-option">food item</div>
+		</div>
+		  <div class="info-text">Food Options will be displayed here</div>
+		<button class="book-button">Create</button>
+        </div>
+    </div>
+</main>
+	
+</body>
+</html>

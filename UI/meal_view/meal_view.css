@@ -1,0 +1,240 @@
+@charset "utf-8";
+main {
+	position: relative;
+	height: 50vh;
+	width: 80vw;
+	margin: auto;
+	
+
+	background: #FFFFFF;
+}
+
+.header{
+	padding-top: 10px;
+}
+
+ul {
+	list-style:none;
+	left: 70%;
+	position: fixed;
+	width: 100%;
+	top: 30px;
+	padding: 0;
+	margin: 0;
+	font-family: Rockwell;
+	font-style: normal;
+	font-weight: normal;
+	list-style-type: none;
+	font-size: 18px;
+
+ }
+
+a, a:visited, a:hover, a:active {
+  color: black;
+}
+ ul li {
+     position:relative;
+ }
+ ul, li {
+     margin:0;
+     padding:0;
+ }
+ li {
+	display:inline-block;
+	padding:10px 10px;
+	text-decoration: none;
+	float: left;
+ }
+li a{
+    text-decoration: none;
+	
+}
+ ul li ul {
+     display:none;
+     position:absolute;
+     top:45px;
+     left:0;
+	 width: 150px;
+ }
+ ul li ul li {
+     display:block;
+	 clear: both;
+     width: 100%;
+ }
+ ul li:hover {
+	background-color: #F1F0F0;
+	color: white;
+	text-shadow: none;
+	cursor: pointer;
+
+ }
+ ul li:hover ul {
+     display:block;
+ }
+
+.title{
+    font-family: Rockwell;
+    font-style: normal;
+    font-weight: normal;
+    margin-left: 18px;
+    color: #000000;
+
+}
+
+h2{
+	font-size: 35px;
+	font-family: Rockwell;
+	text-align: center;
+}
+.container{
+	display: flex;
+	
+}
+.container-child{
+	flex: 1;
+	
+}
+.meal-details{
+	margin-right: 10px;
+}
+.meal-extras{
+	margin-left: 10px;
+	background-color: #E5E5E5;
+}
+
+.meal-details img{
+	width: 100%;
+	object-fit: cover;
+	
+}
+.details{
+	margin-top: 20px;
+	background-color: #E5E5E5;
+	padding: 20px;
+}
+.meal-name{
+	font-family: Rockwell;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 20px
+}
+.meal-price{
+	font-family: Rockwell;
+	font-size: 28px;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+
+.total-extra-price{
+	font-family: Rockwell;
+	font-size: 24px;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+.Total-meal-price{
+	font-family: Rockwell;
+	font-size: 24px;
+	font-weight: 400;
+	margin-bottom: 15px;
+	
+}
+.labels{
+	color: #555555;
+	font-size: 20px
+}
+
+.meal-extras h3{
+	font-family: Rockwell;
+	font-size: 28px;
+	font-weight: 400;
+	text-align: center;
+}
+.extras{
+	display: grid;
+	grid-template-columns: 5% 40% 30% 20%;
+	justify-items: center;
+	grid-row-gap: 20px;
+	grid-column-gap: 10px;
+	margin: 20px 40px;
+	
+	
+}
+
+.extra-headers{
+	font-family: Rockwell;
+	font-size: 20px;
+	font-weight: bold;
+	
+}
+.extra-name{
+	font-family: Rockwell;
+	font-size: 20px;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+	min-width: 0;
+	max-width: 100%;
+	
+
+}
+
+.extra-price{
+	font-family: Rockwell;
+	font-size: 20px;
+	
+	
+}
+
+.quantity-numbers{
+	width: 70px;
+	border: 2px solid black;
+	padding:4px;
+	border-radius: 10px;
+	font-family: Rockwell;
+	font-style: normal;
+	font-weight: normal;
+}
+
+.checkboxes{
+	background-color: #fafafa;
+	border: 1px solid #cacece;
+	padding: 10px;
+	border-radius: 5px; 
+	transform: scale(2);
+}
+
+.button{
+	font-family: Rockwell;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 35px;
+    color: white;
+	background-color: black;
+	height: 50px;
+	float: right;
+	margin: 30px;
+}
+
+optgroup, select{
+	font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

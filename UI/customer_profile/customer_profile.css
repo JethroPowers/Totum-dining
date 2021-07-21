@@ -1,0 +1,126 @@
+@charset "utf-8";
+main {
+	position: relative;
+	height: 50vh;
+	width: 80vw;
+	margin: auto;
+	
+
+	background: #FFFFFF;
+}
+
+.header{
+	padding-top: 10px;
+}
+
+ul {
+	list-style:none;
+	left: 70%;
+	position: fixed;
+	width: 100%;
+	top: 30px;
+	padding: 0;
+	margin: 0;
+	font-family: Rockwell;
+	font-style: normal;
+	font-weight: normal;
+	list-style-type: none;
+	font-size: 18px;
+
+ }
+
+a, a:visited, a:hover, a:active {
+  color: black;
+}
+ ul li {
+     position:relative;
+ }
+ ul, li {
+     margin:0;
+     padding:0;
+ }
+ li {
+	display:inline-block;
+	padding:10px 10px;
+	text-decoration: none;
+	float: left;
+ }
+li a{
+    text-decoration: none;
+	
+}
+ ul li ul {
+     display:none;
+     position:absolute;
+     top:45px;
+     left:0;
+	 width: 150px;
+ }
+ ul li ul li {
+     display:block;
+	 clear: both;
+     width: 100%;
+ }
+ ul li:hover {
+	background-color: #F1F0F0;
+	color: white;
+	text-shadow: none;
+	cursor: pointer;
+
+ }
+ ul li:hover ul {
+     display:block;
+ }
+
+.title{
+    font-family: Rockwell;
+    font-style: normal;
+    font-weight: normal;
+    margin-left: 18px;
+    color: #000000;
+
+}
+
+h2{
+	font-size: 35px;
+	font-family: Rockwell;
+	text-align: center;
+}
+
+
+.customer-details{
+	background-color: #E5E5E5;
+	padding: 40px;
+	display: flex;
+	justify-content: center;
+	
+}
+
+.user-detail{
+	padding:10px;
+    margin-bottom: 30px;
+	border-radius: 10px;
+	font-family: Rockwell;
+	font-size: 25px;
+	
+}
+.user-detail-header{
+	padding:10px;
+    font-weight: bold;
+	border-radius: 10px;
+	font-family: Rockwell;
+	font-size: 25px;
+}
+
+.edit-button{
+	font-family: Rockwell;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 35px;
+    color: white;
+	background-color: black;
+	margin: 0 auto;
+	padding: 0 15px;
+	
+}
