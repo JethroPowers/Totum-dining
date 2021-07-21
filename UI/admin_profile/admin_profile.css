@@ -1,0 +1,259 @@
+UKMONSAVE40UKMONSAVE40UKMONSAVE40UKMONSAVE40UKMONSAVE40UKMONSAVE40UKMONSAVE40UKMONSAVE40@charset "utf-8";
+main {
+	position: relative;
+	height: 50vh;
+	width: 80vw;
+	margin: auto;
+	
+
+	background: #FFFFFF;
+}
+
+/*
+.header{
+	padding-top: 10px;
+}
+
+ul {
+	list-style:none;
+	left: 70%;
+	position: fixed;
+	width: 100%;
+	top: 30px;
+	padding: 0;
+	margin: 0;
+	font-family: Rockwell;
+	font-style: normal;
+	font-weight: normal;
+	list-style-type: none;
+	font-size: 18px;
+
+ }
+
+a, a:visited, a:hover, a:active {
+  color: black;
+}
+ ul li {
+     position:relative;
+ }
+ ul, li {
+     margin:0;
+     padding:0;
+ }
+ li {
+	display:inline-block;
+	padding:10px 10px;
+	text-decoration: none;
+	float: left;
+ }
+li a{
+    text-decoration: none;
+	
+}
+ ul li ul {
+     display:none;
+     position:absolute;
+     top:45px;
+     left:0;
+	 width: 150px;
+ }
+ ul li ul li {
+     display:block;
+	 clear: both;
+     width: 100%;
+ }
+ ul li:hover {
+	background-color: #F1F0F0;
+	color: white;
+	text-shadow: none;
+	cursor: pointer;
+
+ }
+ ul li:hover ul {
+     display:block;
+ }
+
+.title{
+    font-family: Rockwell;
+    font-style: normal;
+    font-weight: normal;
+    margin-left: 18px;
+    color: #000000;
+
+*/
+
+
+h2{
+	margin: 30px;
+	font-size: 35px;
+	font-family: Rockwell;
+	text-align: center;
+}
+
+.create_option{
+	display: flex;
+}
+.report{
+	background-color: #E5E5E5;
+	padding: 30px;
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-around;
+	padding: 40px;
+}
+.mini-header{
+	font-family: Rockwell;
+	text-align: left;
+	font-weight: bold; 
+	font-size: 18px;
+	font-style: normal;
+	margin-left: 10px;
+}
+.meal-inputs{
+	border: 2px solid black;
+	padding:10px;
+    margin:10px  ;
+	border-radius: 10px;
+	font-family: Rockwell;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	
+	
+}
+
+.button{
+	font-family: Rockwell;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 35px;
+    color: white;
+	background-color: black;
+	height: 50px;
+	margin: 10px;
+	
+
+}
+
+.report-details p {
+	
+	font-family: Rockwell;
+	
+	font-size: 25px;
+	font-style: normal;
+	
+}
+.figures{
+	font-family: Rockwell;
+	font-size: 25px;
+	font-weight: bold;
+
+ 
+}
+h3 {
+	font-family: Rockwell;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	
+}
+.popular-meals{
+	font-family: Rockwell;
+	font-size: 25px;
+	text-align: center;
+}
+
+
+.main-div{
+	display: flex;
+	width: 80%;
+	
+	margin: auto;
+	top: 100px;
+  
+
+	
+}
+.child-div{
+	background-color: #E5E5E5;
+	padding: 40px;
+	flex: 1;
+	
+}
+.child-div:first-child{
+	margin-right: 60px;
+	display: flex;
+	flex-direction: column;
+	
+}
+
+
+.admin-buttons{
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+.admin-button{
+	width: 85%;
+	height: 50px;
+	margin: 10px ;
+	font-family: Rockwell;
+	font-size: 20px;
+	font-weight: bold;
+	background-color:#F1F0F0;
+	
+
+}
+
+.user-detail{
+	padding:10px;
+    margin-bottom: 30px;
+	border-radius: 10px;
+	font-family: Rockwell;
+	font-size: 25px;
+	
+}
+.user-detail-header{
+	padding:10px;
+    font-weight: bold;
+	border-radius: 10px;
+	font-family: Rockwell;
+	font-size: 25px;
+}
+.user-details{
+	justify-content:center; 
+}
+
+.edit-button{
+	font-family: Rockwell;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 35px;
+    color: white;
+	background-color: black;
+	margin: 0 auto;
+	padding: 0 15px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

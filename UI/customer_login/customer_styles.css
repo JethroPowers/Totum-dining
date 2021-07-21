@@ -1,0 +1,271 @@
+@charset "utf-8";
+main {
+	position: relative;
+	height: 50vh;
+	width: 80vw;
+	margin: auto;
+	
+
+	background: #FFFFFF;
+}
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.header{
+	padding-top: 10px;
+}
+
+ul {
+	list-style:none;
+	left: 70%;
+	position: fixed;
+	width: 100%;
+	top: 30px;
+	padding: 0;
+	margin: 0;
+	font-family: Rockwell;
+	font-style: normal;
+	font-weight: normal;
+	list-style-type: none;
+	font-size: 18px;
+
+ }
+
+a, a:visited, a:hover, a:active {
+  color: black;
+}
+ ul li {
+     position:relative;
+ }
+ ul, li {
+     margin:0;
+     padding:0;
+ }
+ li {
+	display:inline-block;
+	padding:10px 10px;
+	text-decoration: none;
+	float: left;
+ }
+li a{
+    text-decoration: none;
+	
+}
+ ul li ul {
+     display:none;
+     position:absolute;
+     top:45px;
+     left:0;
+	 width: 150px;
+ }
+ ul li ul li {
+     display:block;
+	 clear: both;
+     width: 100%;
+ }
+ ul li:hover {
+	background-color: #F1F0F0;
+	color: white;
+	text-shadow: none;
+	cursor: pointer;
+
+ }
+ ul li:hover ul {
+     display:block;
+ }
+
+/*
+ul{
+	
+	position: fixed;
+	width: 100%;
+	top: 30px;
+	padding: 0;
+	margin: 0;
+	font-family: Rockwell;
+	font-style: normal;
+	font-weight: normal;
+	list-style-type: none;
+	overflow: hidden;
+	left: 70%;
+}
+
+li {
+	float: left;
+	color: #fff;
+	background: darkorange;
+	display: block;
+	text-decoration: none;
+	transition-duration: 0.5s;
+	
+}
+li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	
+}
+
+li:hover{
+  background: red;
+  cursor: pointer;
+}
+
+
+.dropdown{
+	position:relative;
+}
+
+ul li ul {
+  top: 45px;
+  background: orange;
+
+  min-width: 5rem;
+
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover,
+ul li ul:focus {
+
+   display: block;
+}
+
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+*/
+
+.title{
+    font-family: Rockwell;
+    font-style: normal;
+    font-weight: normal;
+    margin-left: 18px;
+    color: #000000;
+
+}
+
+
+.content{
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.signup-form {
+	vertical-align: middle;
+	
+	
+	
+
+}
+
+.staff-signup-form {
+	vertical-align: middle;
+	width: 600px;
+	height: 400px;
+	top: 50%;
+	left: 70%;
+	position: fixed;
+	transform: translate(-50%, -50%);
+
+}
+
+.content h2{
+	font-family: Rockwell;
+	font-style: normal;
+	font-weight: normal;
+	margin-bottom: 10px;
+	color: black;
+	
+}
+
+input{
+	border: 2px solid black;
+	padding:10px;
+    margin-bottom:10px  ;
+	border-radius: 10px;
+	font-family: Rockwell;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	
+}
+
+.book-button  {
+	display: block;
+	font-family: Rockwell;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 35px;
+	color: black;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	text-color: black;
+	margin: 10px auto;
+}
+
+.form-field{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;	
+}
+small{
+	color: red
+}
+.form-field.error input{
+	border-color: red;
+}
+
+.form-field.success input{
+	border-color: black;
+	
+}
+.form-field input:focus{
+	outline: none;
+	
+}
+
+.customer-login-image {
+    background-image: url("../images/nordic-cuisine.jpg");
+    background-repeat: no-repeat;
+    margin-left: 10% 
+}
+
+
+.flex-child{
+	flex: 1;
+	margin: auto;
+	height: 600px
+	
+}
+
+
+.image_text{
+    font-family: Rockwell;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 33px;
+    line-height: 75px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-repeat: no-repeat;
+	margin-left: 3%;
+}
