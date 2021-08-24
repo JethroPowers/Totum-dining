@@ -7,7 +7,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
   $(document).ready(function() {
-  $('#nav-placeholder').load("nav.html");
+  $('#nav-placeholder').load("../nav.html");
 
 });
 </script>
@@ -23,9 +23,12 @@
     	
 	   <div class="container">
 			<div class="content flex-child">
+				<div class="expired_user" id="expired_user">
+					Your session has expired. Please login again
+				</div>
 				<h2 id="book">Login</h2>
                 <div class="input-wrapper">
-                  <div class="form-field success">
+                  <div class="form-field success ">
                     <input type="email" placeholder="Email" id="email-login"/>
 					<small></small>
                   </div>
@@ -33,6 +36,7 @@
                  	 <input type="password" placeholder="Password" id="password-login"/>
 					<small></small>
 					</div>
+				  <small id="invalid-text"></small>
 				  <div class="form-field">  
                   	<button class="book-button" id="login-button" >Login</button>
 				  </div>

@@ -5,11 +5,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
   $(document).ready(function() {
-  $('#nav-placeholder').load("nav.html");
+  $('#nav-placeholder').load("../nav.html");
 
 });
 </script>
-
+<script src="staff_signup.js"></script>
 <link href="staff_signup.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -28,13 +28,38 @@
 				  <div class="staff-signup-form">
 					<h2 id="book">Staff Sign up</h2>
 					<div class="input-wrapper">
-					  <input type="text" placeholder="Full name"/><br>
-					  <input type="email" placeholder="Email"/><br>
-					  <input type="text" placeholder="Phone"/><br>
-					  <input type="password" placeholder="Password"/><br>
-					  <input type="password" placeholder="Password Confirmation"/><br>
-					  <button class="book-button"> Sign up</button>
-					  </div>
+						<div class="form-field success">
+							<input type="text" placeholder="Full name" id="fullname"/>
+							<small></small>
+						</div>
+
+						<div class="form-field success">
+							<input type="email" placeholder="Email" id="email-signup"/>
+							<small></small>
+						</div>
+						<div class="form-field success">
+							<input type="text" placeholder="Phone" id="phone"/>
+							<small></small>
+						</div>
+						
+						<div class="form-field success">
+							 <input type="password" placeholder="Current Password" id="current-password"/>
+							<small></small>
+							</div>	
+						<div class="form-field success">
+							 <input type="password" placeholder="Password" id="password-signup"/>
+							<small></small>
+							</div>
+						<div class="form-field success">
+							<input type="password" placeholder="Password Confirmation" id="password-confirmation"/>
+							<small></small>
+						</div>
+						<small id="invalid-text"></small>
+						<div class="form-field">
+							<button class="book-button" id="signup-button">Sign up</button>
+						</div>
+                    
+                  	</div>
 				  </div>
 	    	</div>
 		</div>

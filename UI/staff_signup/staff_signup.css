@@ -65,7 +65,7 @@ input{
 
 
 .staff-signup-image {
-    background-image: url("images/staff2-signup.jpg");
+    background-image: url("../images/staff2-signup.jpg");
     background-repeat: no-repeat;
     background-size:cover;
 	background-color: blue;
@@ -79,6 +79,26 @@ input{
 	
 }
 
+.form-field{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;	
+}
+small{
+	color: red
+}
+.form-field.error input{
+	border-color: red;
+}
+
+.form-field.success input{
+	border-color: black;
+	
+}
+.form-field input:focus{
+	outline: none;
+	
+}
 
 
 .image_text{

@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Admin_profile</title>
+<title>Admin Profile</title>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
@@ -11,7 +11,8 @@
 
 });
 </script>
-
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="admin_profile.js"></script>
 <link href="admin_profile.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -20,47 +21,63 @@
 
 		</div> 
 <main class="main">
-  
-<!--
-  <header class="header">
-    <nav>
-	  <h1 class="title">TOTEM DINING</h1>
-		<ul>
-		  <li><a href="Menu">Menu</a>
-			 <ul class="dropdown">
-				<li><a href="#">Full Menu</a></li>
-				<li><a href="#">Specials</a></li>
-		    </ul>
-		  </li>
 
-		  <li><a href="Book">Book</a></li>
-		  <li><a href="Login">Hi, User</a>
-			<ul class="dropdown">
-				<li><a href="#">Sign UP</a></li>
-				<li><a href="#">Login</a></li>
-				<li><a href="#">View account</a></li>
-				<li><a href="#">Your Orders</a></li>
-		    </ul>
-		  </li>
-		  <li><a href="Signup"><img src="images/icons/shopping-cart.svg" height="30px" alt=""/></a></li> 
-		</ul>
-    </nav>
-  </header>
--->
   <h2>Admin profile</h2>
     <div class="main-div">
+	   <div id="editModal" class="edit-modal">
+
+		<!-- Modal content -->
+		<div class="edit-modal-content">
+				<span class="close">&times;</span>
+				<h2 >Edit details</h2>
+					<div class="input-wrapper">
+						<div class="form-field success">
+							<input type="text" placeholder="Full name (optional)" id="fullname-edit"/>
+							<small></small>
+						</div>
+
+						<div class="form-field success">
+							<input type="email" placeholder="Email (optional)" id="email-edit"/>
+							<small></small>
+						</div>
+						<div class="form-field success">
+							<input type="text" placeholder="Phone (optional)" id="phone-edit"/>
+							<small></small>
+						</div>
+						<div class="form-field success">
+							 <input type="password" placeholder="Current Password (optional)" id="current-password"/>
+							<small></small>
+							</div> 
+						<div class="form-field success">
+							 <input type="password" placeholder="New Password (optional)" id="new-password"/>
+							<small></small>
+							</div>
+						<div class="form-field success">
+							<input type="password" placeholder="Password Confirmation (optional)" id="password-confirmation-edit"/>
+							<small></small>
+						</div>
+						
+						<small id="invalid-text"></small>
+						<div class="form-field">
+							<button class="edit-button-model" id="edit-button-model">Edit</button>
+						</div>
+                    
+                  </div>
+			</div>
+
+		</div>
       <div class="user-details child-div" >
         <div class="user-detail-header">Name</div>
-		<div class="user-detail">JK Powers</div> 
+		<div class="user-detail" id="full_name_admin_profile"></div> 
 		<div class="user-detail-header">Email</div>
-		<div class="user-detail">abdc123@gmail.com</div> 
+		<div class="user-detail" id="email_admin_profile"></div> 
 		<div class="user-detail-header">Phone Number</div>
-		<div class="user-detail">07123455676</div> 
-		<button class="edit-button">Edit Profile</button>
+		<div class="user-detail" id="phone_admin_profile"></div> 
+		<button class="edit-button" id="edit-button">Edit Profile</button>
 	  </div>
       <div class="admin-buttons child-div">
-	  	 <button class="admin-button">Create a meal</button>
-		 <button class="admin-button">Food Options</button>
+	  	 <button class="admin-button" onclick="location.href='../create_meal_admin/create_a_meal_admin.html'" type="button">Create a meal</button>
+		 <button class="admin-button" onclick="location.href='../create_meal_admin/create_a_meal_admin.html'" type="button">Food Options</button>
 		 <button class="admin-button">Menu</button> 
 		 <button class="admin-button">Completed Orders</button>
 		 <button class="admin-button">Pending Orders</button>

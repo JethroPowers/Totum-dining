@@ -1,50 +1,76 @@
 window.onload = function() {
-	
-	
 	var submitButton = document.getElementById("login-button");
 	submitButton.onclick = onSubmitButtonClick;
     
+	var params = new URLSearchParams(window.location.search);
+	let expiredUserParam = params.get('userExpired');
+	
+	var expiredUserDiv = document.getElementById("expired_user");
+	if (expiredUserParam === 'true'){
+		expiredUserDiv.style.display = "block";
+	}
+	else {
+		expiredUserDiv.style.display = "none";
+	}
 };
+
+var loginURL = "http:localhost:5000/auth/login"
 
 function onSubmitButtonClick(event){
 	event.preventDefault();
+	
+	
 	var emailEl = document.getElementById("email-login");
 	const emailValid = checkEmail(emailEl);
-	
-//	if(isRequired(email.value)){ 
-//		console.log("email has something");
-//	}
-//
-//	else{
-//		console.log("email has nothing");	
-//	}
-//	if ( isEmailvalid(email.value)){
-//		console.log("email is valid");
-//	}
-//	else{
-//		console.log("email is not valid");	
-//	}
-//	
+
 	var passwordEl = document.getElementById("password-login");
 	const passwordSecure = checkPassword(passwordEl);
-//	if(isRequired(password.value)){ 
-//		console.log("password has something");
-//	}
-//	else{
-//		console.log("password has nothing");	
-//	}
-//	if(isBetween(email.value, 5, 40)){
-//		console.log("email is between 5 and 40");
-//	}
-//	else{
-//		console.log("email not between 5 and 40");
-//	}
-//	if ( isPasswordSecure(password.value)){
-//		console.log("password is secure");
-//	}
-//	else{
-//		console.log("password is not secure");	
-//	}
+	
+	var invalidTextEl = document.getElementById("invalid-text");
+	invalidTextEl.textContent = '';
+	if (!emailValid || !passwordSecure){
+		return;
+	}
+	
+	const loginDetails = {email:emailEl.value.trim(), password:passwordEl.value.trim() };
+	console.log(loginDetails)
+	const response = fetch(loginURL, {
+		method: 'POST',
+		body: JSON.stringify(loginDetails), // string or object
+		headers: {
+		  'Content-Type': 'application/json'
+		}
+	})
+	.then(function(response) {
+		
+    	if (response.status !== 200) {
+			console.log(`Looks like there was a problem. Status code: ${response.status}`);
+			response.json()
+			.then(function(data) {
+				const invalidMessage = data.message;
+				invalidTextEl.textContent = invalidMessage;
+			});
+		  	return;
+    	}
+		response.json()
+	    .then(function(data) {
+			console.log(data);
+			localStorage.setItem("currentUser", JSON.stringify(data.user));
+			localStorage.setItem("accessToken", JSON.stringify(data.access_token));
+			const isAdmin = data.user.is_admin;
+			if(isAdmin == 0){
+				window.location.href = "../full_menu/customer_fullmenu.html";
+			}
+			else {
+				window.location.href = "../admin_profile/admin_profile.html";
+			}
+		});
+  	})
+	.catch(function(error) {
+		console.log("Fetch error: " + error);
+	});
+
+	
 	
 
 }

@@ -237,9 +237,86 @@ h3 {
 	padding: 0 15px;
 	
 }
+.edit-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 30%;
+  top: 20%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
 
+/* Modal Content/Box */
+.edit-modal-content {
+  background-color: #fefefe;	
+  padding: 15px 80px;
+  border: 1px solid #888;
+  width: 600px; /* Could be more or less, depending on screen size */
+}
 
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
 
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input{
+	border: 2px solid black;
+	padding:10px;
+	border-radius: 10px;
+	font-family: Rockwell;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	margin-bottom: 15px;
+
+	
+}
+
+.edit-button-model  {
+	display: block;
+	font-family: Rockwell;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 35px;
+	color: black;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	text-color: black;
+	margin: 0 auto;
+}
+
+.form-field{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;	
+}
+small{
+	color: red
+}
+.form-field.error input{
+	border-color: red;
+}
+
+.form-field.success input{
+	border-color: black;
+	
+}
+.form-field input:focus{
+	outline: none;
+	
+}
 
 
 

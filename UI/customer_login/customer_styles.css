@@ -269,3 +269,14 @@ small{
     background-repeat: no-repeat;
 	margin-left: 3%;
 }
+.expired_user{
+	border: #FF851B;
+    font-family: Rockwell;
+    font-style: normal;
+    font-weight: normal;
+    background: #FF851B;
+    margin-bottom: 10px;
+    font-size: 15px;
+    height: 40px;
+    padding: 10px;
+}
